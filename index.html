@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheets/index.css" />
+    <link rel="stylesheet" href="./stylesheets/card.css" />
+    <title>Profile Card Generator</title>
+  </head>
+  <body>
+    <div class="input-form">
+      <h1>Profile Card Generator</h1>
+      <form action="">
+        <label for="image">Image URL:</label>
+        <input type="text" id="image" required />
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+
+        <label for="bio">Bio:</label>
+        <input type="text" id="bio" required />
+
+        <label for="twitter">Twitter Link:</label>
+        <input type="text" id="twitter" required />
+
+        <label for="github">GitHub Link:</label>
+        <input type="text" id="github" required />
+
+        <label for="linkedin">LinkedIn Link:</label>
+        <input type="text" id="linkedin" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+
+        <button id="generate">Generate Card</button>
+      </form>
+    </div>
+
+    <div id="output" class="card-container">
+      <!-- Generated profile card will be displayed here -->
+      <h1>Generate Profile Card</h1>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

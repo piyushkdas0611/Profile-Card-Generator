@@ -1,0 +1,68 @@
+.card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(7px);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(169, 205, 235);
+  }
+  .profile {
+    max-width: 150px;
+    max-height: 150px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin: 1rem;
+    object-fit: cover;
+  }   
+
+  .card h2 {
+    margin: 1rem;
+  }
+  .card p {
+    font-size: 18px;
+    margin: 1rem 0.5rem;
+    text-align: center;
+  }
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .links a img {
+    width: 2.5rem;
+    border-radius: 50%;
+    margin: 1rem 0.5rem;
+    transition: background 0.5s;
+  }
+  .links a img:hover {
+    background: #ffffff;
+    box-shadow: 0 0 10px rgb(169, 205, 235);
+  }
+  .card a {
+    width: 100%;
+  }
+  .btn2 {
+    padding: 0.7rem;
+    border-radius: 25px;
+    background: transparent;
+    width: 100%;
+    border: none;
+    align-self: center;
+    box-shadow: 0 4px 15px rgb(116, 134, 149);
+    color: white;
+    margin-bottom: 1rem;
+  }
+  .btn2:hover {
+    cursor: pointer;
+    background-color: white;
+    font-weight: medium;
+    box-shadow: 0 0 10px rgb(169, 205, 235);
+    color: #137570;
+  }
+  
