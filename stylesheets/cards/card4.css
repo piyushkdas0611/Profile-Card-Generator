@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Roboto+Slab:wght@100;300&display=swap');
+
+.card_4 {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#140f07, #172a4d, #4961ad, #8da2fa, #eaeef6);
+    backdrop-filter: blur(7px);
+    border-radius: 15px;
+    border: 2px solid #759bd2;
+    font-family: 'Roboto Slab', serif;
+}
+
+.profile_4 {
+    max-width: 150px;
+    max-height: 150px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin: 1rem;
+    object-fit: cover;
+}
+
+.card_4 h2 {
+    margin: 1rem;
+}
+
+.card_4 p {
+    font-size: 18px;
+    margin: 1rem 0.5rem;
+    text-align: center;
+}
+
+.links_4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links_4 a {
+    fill: rgb(44, 45, 48);
+    transition: fill 0.5s;
+    margin: 1rem 0.5rem;
+}
+
+.links_4 a:hover {
+    fill: #ffffff;
+    transition: transform 0.4s ease-out;
+    transform: rotateY(360deg);
+    transition-delay: 0.1s;
+}
+
+.card_4 a {
+    width: 100%;
+}
+
+.btn2_4 {
+    width: 80%;
+    border: 1px solid #1236da;
+    color: rgb(255, 255, 255);
+    margin: 0.5rem;
+    background-color: #6884f4;
+}
+
+.btn2_4:hover {
+    background-color: #4866ec;
+    box-shadow: none;
+    font-weight: bold;
+    color: white;
+}
+
+#copy4 {
+    margin-bottom: 1.5rem;
+}
