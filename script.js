@@ -260,6 +260,40 @@ function generateCard() {
     });
   }
 
+  // Looping through copyCssButtonParams to create HTML elements for the "copy CSS" button.
+  copyCssParams.forEach((copyCssParam) => {
+    const copyButtonCSS = document.getElementById(copyCssParam.id);
+    copyButtonCSS.addEventListener("click", function () {
+      // Try fetching css content from current css file path
+      getCssFileContents(copyCssParam.path)
+        .then((cssContents) => {
+          const cssContentAsText = cssContents;
+
+          // This part is based on logic from "copyButtonHTML"
+          // Create a textarea element to hold the card HTML
+          const textarea = document.createElement("textarea");
+          textarea.value = cssContentAsText;
+          document.body.appendChild(textarea);
+
+          // Select the text in the textarea
+          textarea.select();
+          textarea.setSelectionRange(0, 99999); // For mobile devices
+
+          // Copy the selected text to the clipboard
+          document.execCommand("copy");
+
+          // Remove the textarea element
+          document.body.removeChild(textarea);
+
+          // Provide feedback to the user
+          alert("Card CSS copied to clipboard!");
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    });
+  });
+
   // <--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
   // <--- --- --- End of section for "copy CSS" buttons functionality --- --- ---|
 
