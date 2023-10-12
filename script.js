@@ -1,29 +1,28 @@
-const generate = document.getElementById('generate');
+const generate = document.getElementById("generate");
 
 generate.addEventListener("click", (e) => {
-    e.preventDefault();
-    generateCard();
-})
+  e.preventDefault();
+  generateCard();
+});
 
 function generateCard() {
-    
-    const imageSrc = document.getElementById("image").value;
-    const name = document.getElementById("name").value;
-    const bio = document.getElementById("bio").value;
-    const twitterLink = document.getElementById("twitter").value;
-    const githubLink = document.getElementById("github").value;
-    const linkedinLink = document.getElementById("linkedin").value;
-    const email = document.getElementById("email").value;
+  const imageSrc = document.getElementById("image").value;
+  const name = document.getElementById("name").value;
+  const bio = document.getElementById("bio").value;
+  const twitterLink = document.getElementById("twitter").value;
+  const githubLink = document.getElementById("github").value;
+  const linkedinLink = document.getElementById("linkedin").value;
+  const email = document.getElementById("email").value;
 
-    const card = document.getElementById("output");
-    const card1 = document.getElementById("output1");
-    const card2 = document.getElementById("output2");
-    const card3 = document.getElementById("output3");
-    const card4 = document.getElementById("output4");
-    
-    // Add your card here
-    // e.g const card1 = document.getElementById("output1");
-    const cardHTML = `
+  const card = document.getElementById("output");
+  const card1 = document.getElementById("output1");
+  const card2 = document.getElementById("output2");
+  const card3 = document.getElementById("output3");
+  const card4 = document.getElementById("output4");
+
+  // Add your card here
+  // e.g const card1 = document.getElementById("output1");
+  const cardHTML = `
     <div class="card">
         <img src="${imageSrc}" alt="image" class="profile">
         <h2>${name}</h2>
@@ -35,13 +34,14 @@ function generateCard() {
         </div>
         <a href="mailto:${email}"><button class="btn2">Contact me</button></a>
         <button class="btn2" id="copy">Copy embedded link</button>
+        <button class="btn2" id="copy-css">Copy CSS</button>
     </div>
     `;
 
-    // Create your own card here
+  // Create your own card here
 
-    //Card-1
-    const cardHTML1 = `
+  //Card-1
+  const cardHTML1 = `
     <div class="card_1">
         <img src="${imageSrc}" alt="image" class="profile_1">
         <h2>${name}</h2>
@@ -53,11 +53,12 @@ function generateCard() {
         </div>
         <a href="mailto:${email}"><button class="btn2_1">Contact me</button></a>
         <button class="btn2_1" id="copy1">Copy embedded link</button>
+        <button class="btn2_1" id="copy-css1">Copy CSS</button>
     </div>
-    `
+    `;
 
-    //Card-2
-    const cardHTML2 = `
+  //Card-2
+  const cardHTML2 = `
     <div class="card_2">
         <section class="wrapper">
             <div id="stars"></div>
@@ -74,12 +75,13 @@ function generateCard() {
         </div>
         <a href="mailto:${email}"><button class="btn2_2">Contact me</button></a>
         <button class="btn2_2" id="copy2">Copy embedded link</button>
+        <button class="btn2_2" id="copy-css2">Copy CSS</button>
     </div>
-    `
+    `;
 
-    //card 3
+  //card 3
 
-    const cardHTML3 = `
+  const cardHTML3 = `
     <div class="card_3">
         <img src="${imageSrc}" alt="image" class="profile_3">
         <div class="card-content">
@@ -95,11 +97,12 @@ function generateCard() {
         </div>
         <a href="mailto:${email}"><button class="btn2_3">Contact me</button></a>
         <button class="btn2_3" id="copy3">Copy embedded link</button>
+        <button class="btn2_3" id="copy-css3">Copy CSS</button>
     </div>
     `;
 
-    //card 4
-    const cardHTML4 = `
+  //card 4
+  const cardHTML4 = `
     <div class="card_4">
         <img src="${imageSrc}" alt="image" class="profile_4">
         <h2>${name}</h2>
@@ -111,20 +114,21 @@ function generateCard() {
         </div>
         <a href="mailto:${email}"><button class="btn2_4">Contact me</button></a>
         <button class="btn2_4" id="copy4">Copy embedded link</button>
+        <button class="btn2_4" id="copy-css4">Copy CSS</button>
     </div>
-    `
+    `;
 
-    card.innerHTML = cardHTML;
+  card.innerHTML = cardHTML;
 
-    // Write the html of the card to DOM
-    card1.innerHTML = cardHTML1; 
-    card2.innerHTML = cardHTML2;
-    card3.innerHTML = cardHTML3;
-    card4.innerHTML = cardHTML4;
-    
-    //Create a copyHTML variable and store the HTML code without the copy embedded link button
+  // Write the html of the card to DOM
+  card1.innerHTML = cardHTML1;
+  card2.innerHTML = cardHTML2;
+  card3.innerHTML = cardHTML3;
+  card4.innerHTML = cardHTML4;
 
-    const copyHTML = `
+  //Create a copyHTML variable and store the HTML code without the copy embedded link button
+
+  const copyHTML = `
     <div class="card">
         <img src="${imageSrc}" alt="image" class="profile">
         <h2>${name}</h2>
@@ -137,8 +141,8 @@ function generateCard() {
         <a href="mailto:${email}"><button class="btn2">Contact me</button></a>
     </div>
     `;
-    
-    const copyHTML1 = `
+
+  const copyHTML1 = `
     <div class="card_1">
         <img src="${imageSrc}" alt="image" class="profile_1">
         <h2>${name}</h2>
@@ -152,7 +156,7 @@ function generateCard() {
     </div>
     `;
 
-    const copyHTML2 = `
+  const copyHTML2 = `
     <div class="card_2">
         <section class="wrapper">
             <div id="stars"></div>
@@ -171,7 +175,7 @@ function generateCard() {
     </div>
     `;
 
-    const copyHTML3 = `
+  const copyHTML3 = `
     <div class="card_3">
         <img src="${imageSrc}" alt="image" class="profile_3">
         <div class="card-content">
@@ -189,7 +193,7 @@ function generateCard() {
     </div>
 `;
 
-    const copyHTML4 = `
+  const copyHTML4 = `
     <div class="card_4">
         <img src="${imageSrc}" alt="image" class="profile_4">
         <h2>${name}</h2>
@@ -203,111 +207,198 @@ function generateCard() {
     </div>
     `;
 
-    const copyButton = document.getElementById("copy");
-    copyButton.addEventListener("click", function () {
-        // Create a textarea element to hold the card HTML
-        const textarea = document.createElement("textarea");
-        textarea.value = copyHTML;
-        document.body.appendChild(textarea);
+  // This section concerns the functionality of the "copy CSS" buttons -- --- --->
+  // --- --- --- --- --- --- --- ---- --- --- --- --- --- --- --- --- --- --- --->
 
-        // Select the text in the textarea
-        textarea.select();
-        textarea.setSelectionRange(0, 99999); // For mobile devices
+  // Array with each "copy CSS" button's ID and their correlating paths to card css files (copied from index.html. Add more copy CSS" button ID:s and correlating css file paths as new Profile card-templates are added, and new "copy CSS" buttons will be looped out on new cards.
+  const copyCssParams = [
+    { id: "copy-css", path: "./stylesheets/cards/card.css" },
+    { id: "copy-css1", path: "./stylesheets/cards/card1.css" },
+    { id: "copy-css2", path: "./stylesheets/cards/card2.css" },
+    { id: "copy-css3", path: "./stylesheets/cards/card3.css" },
+    { id: "copy-css4", path: "./stylesheets/cards/card4.css" },
+  ];
 
-        // Copy the selected text to the clipboard
-        document.execCommand("copy");
+  // For security reasons we cannot access the css file contents from the client side. Because of that we need to fetch the contents when they've already been included in the HTML. This asynchronous function does this.
+  function getCssFileContents(filePath) {
+    return new Promise((resolve, reject) => {
+      const linkElement = document.querySelector(
+        `link[rel="stylesheet"][href="${filePath}"]`
+      );
 
-        // Remove the textarea element
-        document.body.removeChild(textarea);
+      if (linkElement) {
+        // Creates a XMLHttpRequest object
+        const xhr = new XMLHttpRequest();
 
-        // Provide feedback to the user
-        alert("Card HTML copied to clipboard!");
-    })
+        // Fetches the specific css file
+        xhr.open("GET", filePath, true);
 
-    const copyButton1 = document.getElementById("copy1");
-    copyButton1.addEventListener("click", function () {
-        // Create a textarea element to hold the card HTML
-        const textarea = document.createElement("textarea");
-        textarea.value = copyHTML1;
-        document.body.appendChild(textarea);
+        // The css contents is here set to return as text
+        xhr.responseType = "text";
 
-        // Select the text in the textarea
-        textarea.select();
-        textarea.setSelectionRange(0, 99999); // For mobile devices
+        // This part handles success or failure of the data submission
+        xhr.onload = function () {
+          if (xhr.status === 200) {
+            // If successful, the response returns as text (from the specified css file) and is saved to a variable
+            const cssContents = xhr.responseText;
+            resolve(cssContents);
+          } else {
+            reject.error("Failed to load CSS file. Status code: ", xhr.status);
+          }
+        };
 
-        // Copy the selected text to the clipboard
-        document.execCommand("copy");
+        // If an error occurs
+        xhr.onerror = function () {
+          reject.error("Request failed");
+        };
 
-        // Remove the textarea element
-        document.body.removeChild(textarea);
-
-        // Provide feedback to the user
-        alert("Card HTML copied to clipboard!");
-    })
-
-    const copyButton2 = document.getElementById("copy2");
-    copyButton2.addEventListener("click", function () {
-        // Create a textarea element to hold the card HTML
-        const textarea = document.createElement("textarea");
-        textarea.value = copyHTML2;
-        document.body.appendChild(textarea);
-
-        // Select the text in the textarea
-        textarea.select();
-        textarea.setSelectionRange(0, 99999); // For mobile devices
-
-        // Copy the selected text to the clipboard
-        document.execCommand("copy");
-
-        // Remove the textarea element
-        document.body.removeChild(textarea);
-
-        // Provide feedback to the user
-        alert("Card HTML copied to clipboard!");
-    })
-
-
-    const copyButton3 = document.getElementById("copy3");
-    copyButton3.addEventListener("click", function () {
-        // Create a textarea element to hold the card HTML
-        const textarea = document.createElement("textarea");
-        textarea.value = copyHTML3;
-        document.body.appendChild(textarea);
-
-        // Select the text in the textarea
-        textarea.select();
-        textarea.setSelectionRange(0, 99999); // For mobile devices
-
-        // Copy the selected text to the clipboard
-        document.execCommand("copy");
-
-        // Remove the textarea element
-        document.body.removeChild(textarea);
-
-        // Provide feedback to the user
-        alert("Card HTML copied to clipboard!");
-    })
-
-
-    const copyButton4 = document.getElementById("copy4");
-    copyButton4.addEventListener("click", function () {
-        // Create a textarea element to hold the card HTML
-        const textarea = document.createElement("textarea");
-        textarea.value = copyHTML4;
-        document.body.appendChild(textarea);
-
-        // Select the text in the textarea
-        textarea.select();
-        textarea.setSelectionRange(0, 99999); // For mobile devices
-
-        // Copy the selected text to the clipboard
-        document.execCommand("copy");
-
-        // Remove the textarea element
-        document.body.removeChild(textarea);
-
-        // Provide feedback to the user
-        alert("Card HTML copied to clipboard!");
-    })    
+        // The actual request (for the css contents) itself
+        xhr.send();
+      } else {
+        reject.error("CSS file not found in the document");
+      }
+    });
   }
-  
+
+  // Looping through copyCssButtonParams to create HTML elements for the "copy CSS" buttons
+  copyCssParams.forEach((copyCssParam) => {
+    const copyButtonCSS = document.getElementById(copyCssParam.id);
+    copyButtonCSS.addEventListener("click", function () {
+      // Try fetching css content from current css file path
+      getCssFileContents(copyCssParam.path)
+        .then((cssContents) => {
+          const cssContentAsText = cssContents;
+
+          // This part is based on logic from "copyButtonHTML"
+          // Create a textarea element to hold the card HTML
+          const textarea = document.createElement("textarea");
+          textarea.value = cssContentAsText;
+          document.body.appendChild(textarea);
+
+          // Select the text in the textarea
+          textarea.select();
+          textarea.setSelectionRange(0, 99999); // For mobile devices
+
+          // Copy the selected text to the clipboard
+          document.execCommand("copy");
+
+          // Remove the textarea element
+          document.body.removeChild(textarea);
+
+          // Provide feedback to the user
+          alert("Card CSS copied to clipboard!");
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    });
+  });
+
+  // <--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---|
+  // <--- --- --- End of section for "copy CSS" buttons functionality --- --- ---|
+
+  const copyButtonHTML = document.getElementById("copy");
+  copyButtonHTML.addEventListener("click", function () {
+    // Create a textarea element to hold the card HTML
+    const textarea = document.createElement("textarea");
+    textarea.value = copyHTML;
+    document.body.appendChild(textarea);
+
+    // Select the text in the textarea
+    textarea.select();
+    textarea.setSelectionRange(0, 99999); // For mobile devices
+
+    // Copy the selected text to the clipboard
+    document.execCommand("copy");
+
+    // Remove the textarea element
+    document.body.removeChild(textarea);
+
+    // Provide feedback to the user
+    alert("Card HTML copied to clipboard!");
+  });
+
+  const copyButtonHTML1 = document.getElementById("copy1");
+  copyButtonHTML1.addEventListener("click", function () {
+    // Create a textarea element to hold the card HTML
+    const textarea = document.createElement("textarea");
+    textarea.value = copyHTML1;
+    document.body.appendChild(textarea);
+
+    // Select the text in the textarea
+    textarea.select();
+    textarea.setSelectionRange(0, 99999); // For mobile devices
+
+    // Copy the selected text to the clipboard
+    document.execCommand("copy");
+
+    // Remove the textarea element
+    document.body.removeChild(textarea);
+
+    // Provide feedback to the user
+    alert("Card HTML copied to clipboard!");
+  });
+
+  const copyButtonHTML2 = document.getElementById("copy2");
+  copyButtonHTML2.addEventListener("click", function () {
+    // Create a textarea element to hold the card HTML
+    const textarea = document.createElement("textarea");
+    textarea.value = copyHTML2;
+    document.body.appendChild(textarea);
+
+    // Select the text in the textarea
+    textarea.select();
+    textarea.setSelectionRange(0, 99999); // For mobile devices
+
+    // Copy the selected text to the clipboard
+    document.execCommand("copy");
+
+    // Remove the textarea element
+    document.body.removeChild(textarea);
+
+    // Provide feedback to the user
+    alert("Card HTML copied to clipboard!");
+  });
+
+  const copyButtonHTML3 = document.getElementById("copy3");
+  copyButtonHTML3.addEventListener("click", function () {
+    // Create a textarea element to hold the card HTML
+    const textarea = document.createElement("textarea");
+    textarea.value = copyHTML3;
+    document.body.appendChild(textarea);
+
+    // Select the text in the textarea
+    textarea.select();
+    textarea.setSelectionRange(0, 99999); // For mobile devices
+
+    // Copy the selected text to the clipboard
+    document.execCommand("copy");
+
+    // Remove the textarea element
+    document.body.removeChild(textarea);
+
+    // Provide feedback to the user
+    alert("Card HTML copied to clipboard!");
+  });
+
+  const copyButtonHTML4 = document.getElementById("copy4");
+  copyButtonHTML4.addEventListener("click", function () {
+    // Create a textarea element to hold the card HTML
+    const textarea = document.createElement("textarea");
+    textarea.value = copyHTML4;
+    document.body.appendChild(textarea);
+
+    // Select the text in the textarea
+    textarea.select();
+    textarea.setSelectionRange(0, 99999); // For mobile devices
+
+    // Copy the selected text to the clipboard
+    document.execCommand("copy");
+
+    // Remove the textarea element
+    document.body.removeChild(textarea);
+
+    // Provide feedback to the user
+    alert("Card HTML copied to clipboard!");
+  });
+}
