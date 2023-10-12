@@ -260,7 +260,7 @@ function generateCard() {
     });
   }
 
-  // Looping through copyCssButtonParams to create HTML elements for the "copy CSS" button.
+  // Looping through copyCssButtonParams to create HTML elements for the "copy CSS" buttons
   copyCssParams.forEach((copyCssParam) => {
     const copyButtonCSS = document.getElementById(copyCssParam.id);
     copyButtonCSS.addEventListener("click", function () {
