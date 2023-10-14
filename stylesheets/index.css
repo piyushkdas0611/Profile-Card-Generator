@@ -94,13 +94,22 @@ button:hover {
   /* Slightly darker shadow on hover */
 }
 
+/* Common styles for both desktop and mobile */
 .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  /* Responsive grid layout */
-  gap: 10px;
-  /* Increased gap for better spacing */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+/* Media query for mobile devices (max-width: 767px) */
+@media (max-width: 767px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+  }
+}
+
 
 .card-container {
   max-width: 100%;
