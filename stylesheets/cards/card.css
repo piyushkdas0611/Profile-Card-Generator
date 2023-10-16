@@ -6,10 +6,13 @@
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(7px);
+  /* background: rgba(255, 255, 255, 0.2); */
+  background-image: linear-gradient(to bottom, #9d9cb4, #eea2a2); 
+  /* backdrop-filter: blur(7px); */
   border-radius: 15px;
+  height: 100%;
   box-shadow: 0 0 10px rgb(169, 205, 235);
+  transition: transform 0.4s ease-in-out;
 }
 .profile {
   max-width: 150px;
@@ -23,6 +26,9 @@
 
 .card h2 {
   margin: 1rem;
+}
+.card:hover {
+  transform: scale(1.1); 
 }
 .card p {
   font-size: 18px;

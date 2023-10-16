@@ -16,7 +16,12 @@
   backdrop-filter: blur(7px);
   border-radius: 15px;
   border: 2px solid #759bd2;
+  transition: transform 0.4s ease-in-out;
   font-family: "Roboto Slab", serif;
+}
+
+.card_4:hover {
+  transform: scale(1.1); 
 }
 
 .profile_4 {
@@ -69,13 +74,16 @@
   color: rgb(255, 255, 255);
   margin: 0.5rem;
   background-color: #6884f4;
+
 }
 
 .btn2_4:hover {
-  background-color: #4866ec;
-  box-shadow: none;
-  font-weight: bold;
-  color: white;
+  background: #9796f0; 
+  background: -webkit-linear-gradient(to top, #fbc7d4, #9796f0);
+  background: linear-gradient(to top, #fbc7d4, #de96f0);
+  transform: scale(1.05);
+  color: rgb(39, 39, 4);
+  box-shadow: 0 8px 20px rgba(168, 81, 123, 0.696);
 }
 
 #copy-css4 {

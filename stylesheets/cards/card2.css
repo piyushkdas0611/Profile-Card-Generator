@@ -7,24 +7,26 @@
     padding: 1rem;
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 0 10px rgb(80, 210, 250);
-    backdrop-filter: blur(7px);
+   /* / backdrop-filter: blur(7px); */
     border-radius: 15px;
     border: 2px solid #00ffff;
     font-family: 'Rajdhani';
     height: 100%;
     overflow: hidden;
     background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
+    transition: transform 0.4s ease-in-out;
     }
     
     .profile_2 {
-    width: 100px;
-    height: 100px;
-    /* width: 100%;
-    height: auto; */
-    border-radius: 50%;
-    margin: 1rem;
-    object-fit: cover;
-    }   
+        max-width: 150px;
+        max-height: 150px;
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        margin: 1rem;
+        object-fit: cover;
+        }   
+        
     
     .card_2 h2 {
     margin: 1rem;
@@ -35,7 +37,9 @@
     text-align: center;
     font-style: italic;
     }
-    
+    .card_2:hover {
+        transform: scale(1.1); 
+      }
     .links_2 {
     display: flex;
     flex-direction: row;
@@ -46,7 +50,7 @@
     width: 2.5rem;
     border-radius: 50%;
     margin: 1rem 0.5rem;
-    transition: background 0.5s;
+  
     }
     .links_2 a {
     fill: white;
@@ -80,7 +84,7 @@
     font-family: 'Rajdhani';
     font-size: medium;
     }
-    
+/*     
     #stars {
     width: 1px;
     height: 1px;
@@ -635,7 +639,7 @@
     16px 1650px #fff, 1021px 1075px #fff, 723px 424px #fff, 1175px 41px #fff,
     494px 1957px #fff, 1296px 431px #fff, 175px 1507px #fff, 831px 121px #fff,
     498px 1947px #fff, 617px 880px #fff, 240px 403px #fff;
-    }
+    } */
     
     
     @keyframes animStar {
