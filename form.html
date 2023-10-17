@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat'\" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani" rel="stylesheet">
+    <link rel="stylesheet" href="./stylesheets/index.css" />
+    <link rel="stylesheet" href="./stylesheets/cards/card.css" />
+    <link rel="stylesheet" href="./stylesheets/cards/card1.css" />
+    <link rel="stylesheet" href="./stylesheets/cards/card2.css" />
+    <link rel="stylesheet" href="./stylesheets/cards/card3.css" />
+    <link rel="stylesheet" href="./stylesheets/cards/card4.css" />
+    <title>Profile Card Generator</title>
+  </head>
+  <body>
+    <div class="input-form">
+      <h1>Profile Card Generator</h1>
+      <form action="">
+        <label for="image">Image URL:</label>
+        <input type="text" id="image" required placeholder="Attach your Image URL" />
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" required placeholder="Write your name" />
+
+        <label for="bio">Bio:</label>
+        <input type="text" id="bio" required placeholder="Write something about you  "/>
+
+        <label for="twitter">Twitter Link:</label>
+        <input type="text" id="twitter" required placeholder="twitter.com/xyz"/>
+
+        <label for="github">GitHub Link:</label>
+        <input type="text" id="github" required placeholder="github.com/xyz"/>
+
+        <label for="linkedin">LinkedIn Link:</label>
+        <input type="text" id="linkedin" required placeholder="linkedin.com/xyz"/>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required placeholder="xyz@gmail.com" />
+
+        <button id="generate">Generate Card</button>
+      </form>
+    </div>
+
+    <div class="container">
+      <div id="output" class="card-container">
+        <!-- Generated profile card will be displayed here -->
+      </div>
+
+      <div id="output1" class="card-container">
+        <!-- Generated profile card will be displayed here -->
+      </div>
+
+      <div id="output2" class="card-container">
+        <!-- Generated profile card will be displayed here -->
+      </div>
+
+      <div id="output3" class="card-container">
+        <!-- Generated profile card will be displayed here -->
+      </div>
+
+      <div id="output4" class="card-container">
+        <!-- Generated profile card will be displayed here -->
+      </div>
+  
+  
+    </div>
+  
+  
+
+    <script src="script.js"></script>
+  </body>
+</html>
