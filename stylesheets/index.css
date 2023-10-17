@@ -129,6 +129,12 @@ button:hover {
 @media (max-width : 728px) {
   .input-form {
     max-width: 100vw;
+    padding: 0;
+    display: grid;
+    place-content: center;
+  }
+  form{
+    margin: 0 5%;
   }
 
   input {
