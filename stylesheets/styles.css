@@ -1,0 +1,54 @@
+body {
+    background-image: linear-gradient(to left bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    max-width: 800px;
+    margin: 20px;
+}
+
+h1 {
+    font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+      text-shadow: .1em .1em 0 hsl(200 50% 30%);
+    font-size: 40px;
+    color: #ffffff;
+}
+
+p {
+    font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 15px;
+    text-shadow: .1em .1em 0 hsl(200 50% 30%);
+    color: #EEEEEE;
+}
+
+.form-button {
+    color: #fff;
+    padding: 15px 25px;
+    background-color: #38D2D2;
+    background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+    border-radius: 14px;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add the transition effect */
+  }
+  
+  .form-button:hover {
+    background-color: #2EB2B2; /* Change the background color on hover */
+  }
+  
