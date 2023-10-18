@@ -119,8 +119,8 @@ function generateCard() {
     </div>
     `;
 
-    //card 5
-    const cardHTML5 = `
+  //card 5
+  const cardHTML5 = `
     <div class="card_5">
         <img src="${imageSrc}" alt="image" class="profile_5">
         <h2>${name}</h2>
@@ -135,7 +135,6 @@ function generateCard() {
         <button class="btn2_5" id="copy-css4">Copy CSS</button>
     </div>
     `;
-    
 
   card.innerHTML = cardHTML;
 
@@ -227,9 +226,7 @@ function generateCard() {
     </div>
     `;
 
-
-
-    const copyHTML5 = `
+  const copyHTML5 = `
     <div class="card_5">
         <img src="${imageSrc}" alt="image" class="profile_5">
         <h2>${name}</h2>
@@ -260,7 +257,7 @@ function generateCard() {
   function getCssFileContents(filePath) {
     return new Promise((resolve, reject) => {
       const linkElement = document.querySelector(
-        `link[rel="stylesheet"][href="${filePath}"]`
+        `link[rel="stylesheet"][href="${filePath}"]`,
       );
 
       if (linkElement) {
@@ -439,9 +436,6 @@ function generateCard() {
     alert("Card HTML copied to clipboard!");
   });
 
-
-
-  
   const copyButtonHTML5 = document.getElementById("copy4");
   copyButtonHTML5.addEventListener("click", function () {
     // Create a textarea element to hold the card HTML

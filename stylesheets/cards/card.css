@@ -7,7 +7,7 @@
   align-items: center;
   padding: 1rem;
   /* background: rgba(255, 255, 255, 0.2); */
-  background-image: linear-gradient(to bottom, #9d9cb4, #eea2a2); 
+  background-image: linear-gradient(to bottom, #9d9cb4, #eea2a2);
   /* backdrop-filter: blur(7px); */
   border-radius: 15px;
   height: 100%;
@@ -22,13 +22,13 @@
   border-radius: 50%;
   margin: 1rem;
   object-fit: cover;
-}   
+}
 
 .card h2 {
   margin: 1rem;
 }
 .card:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 .card p {
   font-size: 18px;

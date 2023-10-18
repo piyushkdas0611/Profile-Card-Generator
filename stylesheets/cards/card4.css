@@ -21,7 +21,7 @@
 }
 
 .card_4:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .profile_4 {
@@ -74,11 +74,10 @@
   color: rgb(255, 255, 255);
   margin: 0.5rem;
   background-color: #6884f4;
-
 }
 
 .btn2_4:hover {
-  background: #9796f0; 
+  background: #9796f0;
   background: -webkit-linear-gradient(to top, #fbc7d4, #9796f0);
   background: linear-gradient(to top, #fbc7d4, #de96f0);
   transform: scale(1.05);
