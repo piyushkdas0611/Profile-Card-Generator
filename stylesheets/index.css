@@ -7,8 +7,19 @@
   box-sizing: border-box;
 }
 
+.dark-mode{
+  --background-image: url(images/background1.svg);
+  --text-color: #fff;
+  --button-color: #000;
+}
+:root{
+  --background-image: url(images/background2.svg);
+  --text-color: #000;
+  --button-color: #fff;
+}
+
 body {
-  background-image: url(images/background.svg);
+  background-image: var(--background-image);
   background-repeat: no-repeat;
   background-size: cover;
   /* Dark background color for better contrast */
@@ -25,12 +36,22 @@ body {
   /* Choose an appropriate font */
 }
 
+#dark-mode-toggle{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  z-index: 100;
+  
+}
+
+
 h1 {
   margin: 50px auto 30px;
   font-size: 32px;
   font-weight: 500;
   text-align: center;
-  color: #fff;
+  color: var(--text-color);
   /* Increase font size for headings */
 }
 
@@ -41,13 +62,14 @@ h1 {
   border-radius: 20px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.04) 100%);
   backdrop-filter: blur(20px);
+  box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 0.37);
   margin-bottom: 4rem;
   /* Subtle shadow effect */
 }
 
 form {
   display: flex;
-  color: #fff;
+  color: var(--text-color);
   flex-direction: column;
   text-align: left;
   justify-content: center;
@@ -60,7 +82,8 @@ form {
 input {
   padding: 0.9rem;
   border-radius: 4px;
-  border: 1px solid #787878;
+  border: 1px solid ;
+  border-color: var(--text-color);
   margin-top: 6px;
   margin-bottom: 20px;
   background-color: transparent;
@@ -71,21 +94,23 @@ input {
   /* Darker text color for input */
 }
 input[type=text]{
-  color: #787878;
+  color: var(--text-color);
 }
 
 button {
   padding: 0.9rem;
   border-radius: 4px;
   background: rgba(131, 90, 220, 0.80);
-  color: #fff;
+  color: var(--button-color);
   border: none;
   font-size: 16px;
   justify-content: center;
   font-weight: 600;
   font-family: 'sofia sans', sans-serif;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s ease-out;
+  backdrop-filter: blur(20px);
 }
+
 
 #generate {
   margin-top: 2rem;
