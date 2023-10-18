@@ -29,12 +29,14 @@
 
 .card_2 h2 {
   margin: 1rem;
+  color: white;
 }
 .card_2 p {
   font-size: 18px;
   margin: 1rem 0.5rem;
   text-align: center;
   font-style: italic;
+  color: aliceblue;
 }
 .card_2:hover {
   transform: scale(1.1);
