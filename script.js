@@ -402,3 +402,17 @@ function generateCard() {
     alert("Card HTML copied to clipboard!");
   });
 }
+function toggleMode() {
+  var icon = document.getElementById("mode-icon");
+  var body = document.body;
+
+  if (icon.classList.contains("fa-sun")) {
+    icon.classList.remove("fa-sun");
+    icon.classList.add("fa-moon");
+    body.classList.add("dark-mode");
+  } else {
+    icon.classList.remove("fa-moon");
+    icon.classList.add("fa-sun");
+    body.classList.remove("dark-mode");
+  }
+}
