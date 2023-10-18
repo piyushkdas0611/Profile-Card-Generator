@@ -15,10 +15,16 @@ body {
 }
 
 .container {
-  padding-top: 200px;
+  display: flex;
+  /* padding-top: 200px; */
   text-align: center;
   max-width: 800px;
   margin: 20px;
+  height: 100vh;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -30,9 +36,12 @@ h1 {
 
 
 p {
+  display: flex;
   font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   font-size: 15px;
   color: #EEEEEE;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .form-button {
@@ -101,4 +110,14 @@ p {
   border-radius: 14px;
   color: white;
   transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px){
+  .container h1{
+    font-size: 1.7rem;
+  }
+
+  .topnav{
+    font-size: 1rem !important;
+  }
 }
