@@ -1,11 +1,17 @@
 # Profile-Card-Generator
+
 A Profile Card Generator for generating profile cards to display on websites.
+
 # Fork, Clone, Make Changes, and Create a Pull Request
+
 This guide will walk you through the process of contributing to this repository by forking it, cloning your fork, making changes, checking out a new branch, committing those changes, pushing them to your fork, and finally, creating a pull request to suggest your changes to the original repository.
 
 ## Fork the Repository
+
 Click the "Fork" button at the top right corner of this repository's page. This action will create a copy of the repository under your GitHub account.
+
 ## Clone Your Fork
+
 Open your terminal (command prompt or Git Bash on Windows, or a terminal on macOS and Linux).
 
 Navigate to the directory where you want to store the project (use cd to change directories).
@@ -23,6 +29,7 @@ cd repository-name
 ```
 
 ## Make Changes
+
 Create a new branch for your changes, giving it a meaningful name related to the issue or feature you're working on:
 
 ```
@@ -32,6 +39,7 @@ git checkout -b feature-or-fix-name
 Make your desired changes to the project using your preferred code editor or IDE.
 
 ## Commit Your Changes
+
 Add the changes you made to the staging area:
 
 ```
@@ -47,6 +55,7 @@ git commit -m "Add a brief description of your changes"
 ```
 
 ## Push Your Changes
+
 Push your changes to your fork on GitHub:
 
 ```
@@ -54,6 +63,7 @@ git push origin feature-or-fix-name
 ```
 
 ## Create a Pull Request
+
 Visit the original repository on GitHub.
 
 You will see a green "Compare & pull request" button. Click it.

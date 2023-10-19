@@ -1,0 +1,29 @@
+{
+  "name": "profile-card-generator",
+  "version": "1.0.0",
+  "description": "An application help to generate a profile card",
+  "main": "index.html",
+  "scripts": {
+    "format-code": "npx prettier . --write",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piyushkdas0611/Profile-Card-Generator.git"
+  },
+  "keywords": [
+    "profile",
+    "card",
+    "web",
+    "application"
+  ],
+  "author": "Piyush K. Das",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/piyushkdas0611/Profile-Card-Generator/issues"
+  },
+  "homepage": "https://github.com/piyushkdas0611/Profile-Card-Generator#readme",
+  "devDependencies": {
+    "prettier": "^3.0.3"
+  }
+}
