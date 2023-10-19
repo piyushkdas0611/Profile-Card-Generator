@@ -10,7 +10,7 @@ body:
       description: A brief description of the issue or bug you are facing, also include what you tried and what didn't work.
     validations:
       required: false
-      
+
   - type: textarea
     attributes:
       label: Screenshots
@@ -26,7 +26,7 @@ body:
       description: Any additional information or Is there anything we should know about this bug?
     validations:
       required: false
-  
+
   - type: checkboxes
     id: no-duplicate-issues
     attributes:
