@@ -1,25 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+<<<<<<< HEAD
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+=======
+  <head>
+>>>>>>> 70042b4142bf5e93bead6155b4d282c3a7a62439
     <title>Profile Card Generator</title>
-    <link rel="stylesheet" href="./stylesheets/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./stylesheets/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="dark-mode">
     <nav>
-        <div class="topnav">
-            <a class="active" href="#home">Profile Card Generator</a>
-            <a class="gitlink" href="https://github.com/piyushkdas0611/Profile-Card-Generator" >Contribute</a>
+      <div class="topnav">
+        <div class="left">
+          <a class="active" href="#home">Profile Card Generator</a>
         </div>
+        <div class="right">
+          <a
+            class="gitlink"
+            href="https://github.com/piyushkdas0611/Profile-Card-Generator"
+            >Contribute</a
+          >
+          <button id="dark-mode-toggle" onclick="toggleMode()">
+            <i id="mode-icon" class="fa fa-moon"></i>
+          </button>
+        </div>
+      </div>
     </nav>
     <div class="container">
-        <h1>Welcome to Our Profile Card Generator</h1>
-        <p>Create your own customized profile card with just a click of the button below.</p>
-        <button class="form-button" onclick="window.location.href='form.html'">Generate Profile</button>
+      <h1>Welcome to Our Profile Card Generator</h1>
+      <p>
+        Create your own customized profile card with just a click of the button
+        below.
+      </p>
+      <button class="form-button" onclick="window.location.href='form.html'">
+        Generate Profile
+      </button>
     </div>
-  <footer>
+    <footer>
       <p>This project is participating in Hacktoberfest.</p>
       <p>&copy; 2023</p>
-  </footer>
-</body>
+    </footer>
+  </body>
+  <script src="script.js"></script>
 </html>

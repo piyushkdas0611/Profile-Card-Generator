@@ -7,19 +7,19 @@
   justify-content: center;
   align-items: center;
   letter-spacing: 1px;
-  background-image: linear-gradient(to bottom, #9590ee, #ffffff); 
+  background-image: linear-gradient(to bottom, #9590ee, #ffffff);
   border-radius: 15px;
   border: 2px solid #b2e5e6;
   backdrop-filter: blur(7px);
   height: 100%;
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(135, 177, 241, 0.7); 
+  box-shadow: 0 0 10px rgba(135, 177, 241, 0.7);
   transition: transform 0.4s ease-in-out;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .card_3:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .profile_3 {
@@ -32,7 +32,7 @@
 
 .card_3 h2 {
   margin: 1rem;
-  color: black; 
+  color: black;
 }
 
 .card_3 p {
@@ -63,9 +63,11 @@
   height: 40px;
   color: #121212;
   border-radius: 35%;
-  box-shadow: 6px 6px 12px #97c3c4, -6px -6px 12px #cdffff;
+  box-shadow:
+    6px 6px 12px #97c3c4,
+    -6px -6px 12px #cdffff;
   transition: all 0.4s;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .card_3 .links_3 ul li a:hover {
@@ -100,21 +102,23 @@
   border-radius: 25px;
   width: 100%;
   align-self: center;
-  background: #4e54c8;  
-  background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);  
-  background: linear-gradient(to right, #8f94fb, #4e54c8); 
+  background: #4e54c8;
+  background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);
+  background: linear-gradient(to right, #8f94fb, #4e54c8);
   width: 90%;
   color: white;
   margin-bottom: 1rem;
-  border: none; 
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
-  transition: background-color 0.3s, transform 0.2s; 
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition:
+    background-color 0.3s,
+    transform 0.2s;
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .btn2_3:hover {
-  background: #9796f0; 
+  background: #9796f0;
   background: -webkit-linear-gradient(to top, #fbc7d4, #9796f0);
   background: linear-gradient(to top, #fbc7d4, #de96f0);
   transform: scale(1.05);

@@ -1,39 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat'\" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat'\"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./stylesheets/index.css" />
     <link rel="stylesheet" href="./stylesheets/cards/card.css" />
     <link rel="stylesheet" href="./stylesheets/cards/card1.css" />
     <link rel="stylesheet" href="./stylesheets/cards/card2.css" />
     <link rel="stylesheet" href="./stylesheets/cards/card3.css" />
     <link rel="stylesheet" href="./stylesheets/cards/card4.css" />
+    <link rel="stylesheet" href="./stylesheets/cards/card5.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Profile Card Generator</title>
   </head>
-  <body>
+
+  <body class="dark-mode">
+    <div class="dark-mode-button">
+      <button id="dark-mode-toggle" onclick="toggleMode()">
+        <i id="mode-icon" class="fa fa-moon"></i>
+      </button>
+    </div>
     <div class="input-form">
       <h1>Profile Card Generator</h1>
       <form action="">
         <label for="image">Image URL:</label>
-        <input type="text" id="image" required placeholder="Attach your Image URL" />
+        <input
+          type="text"
+          id="image"
+          required
+          placeholder="Attach your Image URL"
+        />
 
         <label for="name">Name:</label>
         <input type="text" id="name" required placeholder="Write your name" />
 
         <label for="bio">Bio:</label>
-        <input type="text" id="bio" required placeholder="Write something about you  "/>
+        <input
+          type="text"
+          id="bio"
+          required
+          placeholder="Write something about you  "
+        />
 
         <label for="twitter">Twitter Link:</label>
-        <input type="text" id="twitter" required placeholder="twitter.com/xyz"/>
+        <input
+          type="text"
+          id="twitter"
+          required
+          placeholder="twitter.com/xyz"
+        />
 
         <label for="github">GitHub Link:</label>
-        <input type="text" id="github" required placeholder="github.com/xyz"/>
+        <input type="text" id="github" required placeholder="github.com/xyz" />
 
         <label for="linkedin">LinkedIn Link:</label>
-        <input type="text" id="linkedin" required placeholder="linkedin.com/xyz"/>
+        <input
+          type="text"
+          id="linkedin"
+          required
+          placeholder="linkedin.com/xyz"
+        />
 
         <label for="email">Email:</label>
         <input type="email" id="email" required placeholder="xyz@gmail.com" />
@@ -58,19 +98,18 @@
       <div id="output3" class="card-container">
         <!-- Generated profile card will be displayed here -->
       </div>
-
       <div id="output4" class="card-container">
         <!-- Generated profile card will be displayed here -->
       </div>
-  
-  
+
+      <div id="output5" class="card-container">
+        <!-- Generated profile card will be displayed here -->
+      </div>
     </div>
     <footer>
       <p>This project is participating in Hacktoberfest.</p>
       <p>&copy; 2023</p>
     </footer>
-  
-  
 
     <script src="script.js"></script>
   </body>
