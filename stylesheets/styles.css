@@ -61,32 +61,12 @@ h1 {
 }
 
 p {
-<<<<<<< HEAD
   display: flex;
   font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   font-size: 15px;
   color: #EEEEEE;
   flex-direction: row;
   justify-content: space-around;
-=======
-  font-family:
-    ui-sans-serif,
-    system-ui,
-    -apple-system,
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    "Helvetica Neue",
-    Arial,
-    "Noto Sans",
-    sans-serif,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Noto Color Emoji";
-  font-size: 15px;
-  color: #eeeeee;
->>>>>>> 70042b4142bf5e93bead6155b4d282c3a7a62439
 }
 
 .form-button,
