@@ -1,7 +1,7 @@
 name: Documentation request 📃
 description: Change regarding improving the docs to be more accessible
-title: '[docs]'
-labels: ['documentation']
+title: "[docs]"
+labels: ["documentation"]
 body:
   - type: textarea
     attributes:
@@ -10,7 +10,7 @@ body:
         What category does this change fall under. For example Typo error, New category addition, Rephrasing the sentences, fixing broken links etc.
     validations:
       required: true
-      
+
   - type: textarea
     attributes:
       label: Describe the change you think might work
@@ -34,7 +34,7 @@ body:
 
         - label: "I am a Hacktoberfest 2023 contributor"
           required: false
-  
+
   - type: checkboxes
     id: terms
     attributes:
