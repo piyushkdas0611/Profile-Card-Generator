@@ -6,6 +6,7 @@
   --text-color: #fff;
   --button-color: #000;
 }
+
 :root {
   --background-image: url(images/background2.svg);
   --text-color: #000;
@@ -16,10 +17,10 @@ body {
   background-image: var(--background-image);
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
   background-color: #f0f0f0;
   margin: 0;
-  padding: 0;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,7 +29,6 @@ body {
 
 .container {
   display: flex;
-  /* padding-top: 200px; */
   text-align: center;
   max-width: 800px;
   margin: 20px;
@@ -40,33 +40,22 @@ body {
 }
 
 h1 {
-  font-family:
-    ui-sans-serif,
-    system-ui,
-    -apple-system,
-    system-ui,
-    "Segoe UI",
-    Roboto,
-    "Helvetica Neue",
-    Arial,
-    "Noto Sans",
-    sans-serif,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Noto Color Emoji";
+  font-family: 'Sofia Sans', sans-serif;
   font-size: 40px;
   color: #ffffff;
   text-shadow: 3px 3px 4px #512b81;
+  transition: text-shadow 0.3s ease;
 }
 
 p {
-  display: flex;
-  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-  font-size: 15px;
+  font-family: 'Sofia Sans', sans-serif;
+  font-size: 18px;
   color: #EEEEEE;
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
+  line-height: 1.6;
+  text-align: justify;
 }
 
 .form-button,
@@ -75,16 +64,16 @@ button {
   padding: 15px 25px;
   background-color: #512b81;
   background-image: radial-gradient(
-      93% 87% at 87% 89%,
-      rgba(0, 0, 0, 0.23) 0%,
-      transparent 86.18%
-    ),
-    radial-gradient(
-      66% 66% at 26% 20%,
-      rgba(255, 255, 255, 0.55) 0%,
-      rgba(255, 255, 255, 0) 69.79%,
-      rgba(255, 255, 255, 0) 100%
-    );
+    93% 87% at 87% 89%,
+    rgba(0, 0, 0, 0.23) 0%,
+    transparent 86.18%
+  ),
+  radial-gradient(
+    66% 66% at 26% 20%,
+    rgba(255, 255, 255, 0.55) 0%,
+    rgba(255, 255, 255, 0) 69.79%,
+    rgba(255, 255, 255, 0) 100%
+  );
   box-shadow:
     inset -3px -3px 9px rgba(255, 255, 255, 0.25),
     inset 0px 3px 9px rgba(255, 255, 255, 0.3),
@@ -103,31 +92,36 @@ button {
   transition: background-color 0.3s ease;
 }
 
-.form-button:hover {
-  background-color: #18122b;
+.form-button:hover,
+button:hover {
+  background-image: linear-gradient(
+    to right,
+    #3a1d5e,
+    #512b81
+  );
+  transform: scale(1.05);
 }
 
 .topnav {
   display: flex;
   justify-content: space-between;
   background-image: radial-gradient(
-      93% 87% at 87% 89%,
-      rgba(0, 0, 0, 0.23) 0%,
-      transparent 86.18%
-    ),
-    radial-gradient(
-      66% 66% at 26% 20%,
-      rgba(255, 255, 255, 0.55) 0%,
-      rgba(255, 255, 255, 0) 69.79%,
-      rgba(255, 255, 255, 0) 100%
-    );
+    93% 87% at 87% 89%,
+    rgba(0, 0, 0, 0.23) 0%,
+    transparent 86.18%
+  ),
+  radial-gradient(
+    66% 66% at 26% 20%,
+    rgba(255, 255, 255, 0.55) 0%,
+    rgba(255, 255, 255, 0) 69.79%,
+    rgba(255, 255, 255, 0) 100%
+  );
   box-shadow:
     inset -3px -3px 9px rgba(255, 255, 255, 0.25),
     inset 0px 3px 9px rgba(255, 255, 255, 0.3),
     inset 0px 1px 1px rgba(255, 255, 255, 0.6),
     inset 0px -8px 36px rgba(0, 0, 0, 0.3),
-    inset 0px 1px 5px rgba(255, 255, 255, 0.6),
-    2px 19px 31px rgba(0, 0, 0, 0.2);
+    inset 0px 1px 5px rgba(255, 255, 255, 0.6);
   border-radius: 14px;
   overflow: hidden;
   width: 100%;
@@ -153,8 +147,7 @@ button {
     inset 0px 3px 9px rgba(255, 255, 255, 0.3),
     inset 0px 1px 1px rgba(255, 255, 255, 0.6),
     inset 0px -8px 36px rgba(0, 0, 0, 0.3),
-    inset 0px 1px 5px rgba(255, 255, 255, 0.6),
-    2px 19px 31px rgba(0, 0, 0, 0.2);
+    inset 0px 1px 5px rgba(255, 255, 255, 0.6);
   border-radius: 20px;
   color: white;
 }
@@ -175,19 +168,18 @@ button {
     inset 0px 3px 9px rgba(255, 255, 255, 0.3),
     inset 0px 1px 1px rgba(255, 255, 255, 0.6),
     inset 0px -8px 36px rgba(0, 0, 0, 0.3),
-    inset 0px 1px 5px rgba(255, 255, 255, 0.6),
-    2px 19px 31px rgba(0, 0, 0, 0.2);
+    inset 0px 1px 5px rgba(255, 255, 255, 0.6);
   border-radius: 14px;
   color: white;
   transition: background-color 0.3s ease;
 }
 
-@media (max-width: 768px){
-  .container h1{
+@media (max-width: 768px) {
+  .container h1 {
     font-size: 1.7rem;
   }
 
-  .topnav{
+  .topnav {
     font-size: 1rem !important;
   }
 }
