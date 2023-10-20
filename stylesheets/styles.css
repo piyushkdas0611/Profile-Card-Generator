@@ -62,9 +62,23 @@ h1 {
 
 p {
   display: flex;
-  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    system-ui,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    "Noto Sans",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
   font-size: 15px;
-  color: #EEEEEE;
+  color: #eeeeee;
   flex-direction: row;
   justify-content: space-around;
 }
@@ -182,12 +196,12 @@ button {
   transition: background-color 0.3s ease;
 }
 
-@media (max-width: 768px){
-  .container h1{
+@media (max-width: 768px) {
+  .container h1 {
     font-size: 1.7rem;
   }
 
-  .topnav{
+  .topnav {
     font-size: 1rem !important;
   }
 }
