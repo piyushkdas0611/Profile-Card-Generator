@@ -124,7 +124,7 @@ abbr {
 }
 
 button:disabled {
-    background-color: grey;
+  background-color: grey;
 }
 
 button:not(:disabled):hover {
