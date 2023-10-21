@@ -482,13 +482,12 @@ function configureFormValidation() {
   const controls = cardForm.querySelectorAll(inputSelector);
 
   controls.forEach(control => {
-    control.addEventListener("input", (evt) => {
-        // General check
-        let valid = cardForm.checkValidity();
-      
-        generateButton.disabled = !(valid && validateForm()); // intersection with custom check
+    control.addEventListener("input", () => {
+        generateButton.disabled = !validateForm(); // intersection with custom check
     });
   });
+
+  generateButton.disabled = !validateForm();
 }
 
 /**
@@ -497,6 +496,8 @@ function configureFormValidation() {
  * @returns True if all input elements pass validation checks
  */
 function validateForm() {
+  const cardForm = document.getElementById('card-form');
+  let valid = cardForm.checkValidity();
 
   // Get controls
   const twitterLink = document.getElementById("twitter").value;
@@ -506,10 +507,8 @@ function validateForm() {
   const links = [twitterLink, githubLink, linkedinLink];
   const validLinkRegex = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/i;
 
-  let valid = false;
-
   // Every link should be of valid format and at least one link should not be empty
-  valid = links.every(link => validLinkRegex.test(link.trim()) || link.length === 0) && links.some(link => link.trim().length);
+  valid = valid && links.every(link => validLinkRegex.test(link.trim()) || link.length === 0) && links.some(link => link.trim().length);
 
   return valid;
 }
