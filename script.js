@@ -1,6 +1,8 @@
-const generate = document.getElementById("generate");
+const generateButton = document.getElementById("generate");
 
-generate.addEventListener("click", (e) => {
+configureFormValidation();
+
+generateButton.addEventListener("click", (e) => {
   e.preventDefault();
   generateCard();
 });
@@ -471,3 +473,45 @@ function toggleMode() {
     body.classList.remove("dark-mode");
   }
 }
+
+//#region Form Validation
+
+function configureFormValidation() {
+  const inputSelector = "input, textarea, select";
+  const cardForm = document.getElementById('card-form');
+  const controls = cardForm.querySelectorAll(inputSelector);
+
+  controls.forEach(control => {
+    control.addEventListener("input", (evt) => {
+        // General check
+        let valid = cardForm.checkValidity();
+      
+        generateButton.disabled = !(valid && validateForm()); // intersection with custom check
+    });
+  });
+}
+
+/**
+ * Custom Validation for form inputs
+ * 
+ * @returns True if all input elements pass validation checks
+ */
+function validateForm() {
+
+  // Get controls
+  const twitterLink = document.getElementById("twitter").value;
+  const githubLink = document.getElementById("github").value;
+  const linkedinLink = document.getElementById("linkedin").value;
+
+  const links = [twitterLink, githubLink, linkedinLink];
+  const validLinkRegex = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/i;
+
+  let valid = false;
+
+  // Every link should be of valid format and at least one link should not be empty
+  valid = links.every(link => validLinkRegex.test(link.trim()) || link.length === 0) && links.some(link => link.trim().length);
+
+  return valid;
+}
+
+//#endregion
