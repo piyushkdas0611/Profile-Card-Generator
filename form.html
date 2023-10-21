@@ -36,8 +36,8 @@
     </div>
     <div class="input-form">
       <h1>Profile Card Generator</h1>
-      <form action="">
-        <label for="image">Image URL:</label>
+      <form id="card-form" action="">
+        <label for="image"><abbr title="required">*</abbr>Image URL:</label>
         <input
           type="text"
           id="image"
@@ -45,10 +45,10 @@
           placeholder="Attach your Image URL"
         />
 
-        <label for="name">Name:</label>
+        <label for="name"><abbr title="required">*</abbr>Name:</label>
         <input type="text" id="name" required placeholder="Write your name" />
 
-        <label for="bio">Bio:</label>
+        <label for="bio"><abbr title="required">*</abbr>Bio:</label>
         <input
           type="text"
           id="bio"
@@ -60,22 +60,20 @@
         <input
           type="text"
           id="twitter"
-          required
           placeholder="twitter.com/xyz"
         />
 
         <label for="github">GitHub Link:</label>
-        <input type="text" id="github" required placeholder="github.com/xyz" />
+        <input type="text" id="github" placeholder="github.com/xyz" />
 
         <label for="linkedin">LinkedIn Link:</label>
         <input
           type="text"
           id="linkedin"
-          required
           placeholder="linkedin.com/xyz"
         />
 
-        <label for="email">Email:</label>
+        <label for="email"><abbr title="required">*</abbr>Email:</label>
         <input type="email" id="email" required placeholder="xyz@gmail.com" />
 
         <button id="generate">Generate Card</button>

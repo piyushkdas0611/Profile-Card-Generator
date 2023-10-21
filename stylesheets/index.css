@@ -115,11 +115,19 @@ button {
   backdrop-filter: blur(20px);
 }
 
+abbr {
+  text-decoration: none;
+}
+
 #generate {
   margin-top: 2rem;
 }
 
-button:hover {
+button:disabled {
+    background-color: grey;
+}
+
+button:not(:disabled):hover {
   cursor: pointer;
   transform: scale(1.05);
   transition: 0.3s;
