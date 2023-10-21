@@ -115,6 +115,10 @@ button {
   backdrop-filter: blur(20px);
 }
 
+abbr {
+  text-decoration: none;
+}
+
 #generate {
   margin-top: 2rem;
 }
